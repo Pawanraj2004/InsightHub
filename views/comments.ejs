@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments</title>
+</head>
+<body>
+ <form method="post" action="/blogs/comments/<%= postId %>">
+  <h2>Write your views for the blog</h2>
+  <br><br> 
+  <textarea name="comment" id="comment"></textarea> <!-- Added ID for the textarea -->
+  <br><br>
+  <button>Add comment</button>
+ </form>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a post</title>
+    <link rel="stylesheet" href="/new.css">
+</head>
+<body>
+    <h2>Create A Blog</h2>
+    <form method="post" action="/blogs" enctype="multipart/form-data">
+         <input name="username" placeholder="Enter username" type="text"> <br> <br><br>
+         <input name="topic" placeholder="Enter a topic for your blog" type="text"> <br> <br><br>
+         <textarea name="content" placeholder="Write your blog's content.." cols="40" rows="10"></textarea><br> <br><br>
+         <label for="image">Upload Image:</label>
+         <input type="file" id="image" name="image"><br><br>
+         <button>Add post</button>
+    </form>
+</body>
+</html>

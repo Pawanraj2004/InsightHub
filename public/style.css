@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav h1 {
+    font-size: 2.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-bottom: 20px; /* Add margin below the header */
+}
+
+nav {
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    font-size: 1.25rem;
+    gap: 1rem;
+    margin: 5px;
+}
+
+nav ul a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px; /* Increase gap between posts */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 10px auto;
+    width: 100%;
+}
+
+.post {
+    background-color: azure;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid rgb(150, 227, 227);
+    border-radius: 10px;
+    height: 300px; /* Use min-height instead of fixed height */
+    width:40%; /* Adjust width to accommodate margins */
+    overflow-y: scroll; /* Use auto to show scrollbar only when needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+}
+
+.topic {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.username {
+    font-style: italic;
+}
+
+img {
+    height: 200px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Add more styles as needed for button styling */
+}
+.username{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
