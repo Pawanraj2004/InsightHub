@@ -8,22 +8,38 @@
     <link rel="stylesheet" href="/id.css">
 </head>
 <body>
-    <h1><%= post.topic %></h1>
-    <p>Posted by: <%= post.username %></p>
-    <img src="<%= post.img %>" alt="<%= post.topic %>">
-    <p><%= post.content %></p>
+    <div class="container"> <!-- Add container class here -->
+        <h1><%= post.topic %></h1>
+        <p>Posted by: <%= post.username %></p>
+        <img src="<%= post.img %>" alt="<%= post.topic %>">
+        <p><%= post.content %></p>
 
-    <h2>Comments</h2>
-    <% if (post.comments && post.comments.length > 0) { %>
-        <ul>
-            <% post.comments.forEach(comment => { %>
-                <li><%= comment %></li>
-            <% }); %>
-        </ul>
-    <% } else { %>
-        <p>No comments yet.</p>
-    <% } %>
-    
-    <a href="/blogs">Back to all posts</a>
+        <h2>Comments</h2>
+        <div class="comments">
+            <% if (post.comments && post.comments.length > 0) { %>
+                <ul>
+                    <% post.comments.forEach(comment => { %>
+                        <li class="comment">
+                            <div class="comment-content">
+                                <%= comment.content %>
+                            </div>
+                            <div class="btn-container">
+                                <form method="POST" action="/blogs/comments/<%= post.id %>/<%= comment._id %>?_method=DELETE">
+                                    <button class="remove-comment-btn" type="submit">Remove Comment</button>
+                                </form>
+                                <!-- <a href="/blogs/comments/<%= post.id %>/<%= comment._id %>/edit"><button>Edit Comment</button></a> -->
+
+                            </div>
+                        </li>
+                    <% }); %>
+                </ul>
+            <% } else { %>
+                <p>No comments yet.</p>
+            <% } %>
+        </div>
+        <a href="http://localhost:8080/blogs/comments/<%= post.id %>"><button>Add Comments</button></a>
+        
+        <a href="/blogs"><button>Back to all posts</button></a>
+    </div> <!-- Close container class -->
 </body>
 </html>

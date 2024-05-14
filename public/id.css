@@ -1,4 +1,4 @@
-/* Add this CSS to your stylesheet */
+/* id.css */
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -11,38 +11,104 @@ body {
     max-width: 800px;
     margin: 20px auto;
     padding: 0 20px;
+    text-align: center; /* Center the content horizontally */
 }
 
-h3 {
+h1 {
     color: #343a40;
-    text-align: center; /* Center the heading */
+    font-size: 32px;
+    margin-bottom: 20px; /* Increased spacing below heading */
 }
 
-.post {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center items horizontally */
-    text-align: center; /* Center text */
+p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 15px;
 }
 
-.topic {
-    color: #007bff;
-    margin-bottom: 10px;
-}
-
-.post img {
+img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
     margin-bottom: 15px;
 }
 
-.content {
-    color: #555;
-    line-height: 1.6;
+h2 {
+    color: #343a40;
+    font-size: 24px;
+    margin-bottom: 15px; /* Increased spacing below subheading */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: rgba(255, 183, 0, 0.657);
+    color: black;
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* id.css */
+
+/* Your existing CSS styles */
+
+
+.comments {
+    background-color:  rgba(255, 183, 0, 0.184); /* Changed background color */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px; /* Increased margin from top */
+    margin-bottom: 30px; /* Increased margin from top */
+    display: flex;
+    flex-direction: column; /* Align items in a column */
+    align-items: center; /* Center items horizontally */
+}
+
+.comment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center items horizontally */
+    margin-bottom: 15px; /* Adjust margin between comments */
+}
+
+.comment-content {
+    margin-bottom: 10px; /* Increase space between content and button */
+}
+
+.remove-comment-btn {
+    background-color: #dc3545; /* Changed button color */
+    color: #fff;
+    border: none;
+    padding: 5px 10px; /* Adjust button padding */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.remove-comment-btn:hover {
+    background-color: #c82333; /* Darker color on hover */
 }

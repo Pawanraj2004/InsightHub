@@ -1,15 +1,10 @@
-/* Add this CSS to your stylesheet */
+/* Style for Comments Form */
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #f8f9fa;
     margin: 0;
     padding: 0;
-}
-
-h2 {
-    color: #343a40;
-    text-align: center;
 }
 
 form {
@@ -21,28 +16,31 @@ form {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-input[type="text"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ced4da;
-    border-radius: 4px;
-    box-sizing: border-box;
+h2 {
+    color: #343a40;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-input[type="file"] {
-    margin-top: 10px;
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
 }
 
 button {
     background-color: rgb(255, 183, 0);
     color: black;
-    border: 1px solid black;
+  border: 1px solid black;
+
     padding: 10px 20px;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
